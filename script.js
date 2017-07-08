@@ -15,23 +15,25 @@ let numbers = [ 1, 12, 4, 18, 9, 7, 11, 3, 101, 5, 6 ];
 1. Return the 4th element in the "numbers" array
 */
 function getFourthNum(){
-  console.log(numbers[3])
+  return (numbers[3])
 }
+
 
 /*
 2. Iterate over the "numbers" array. Push any numbers less than 10 onto "smallNums". Return "smallNums".
 */
 function smallNums(){
-    let smallNums = [];
-for (i=0; i < numbers.length; i++)
-return smallNums
+  for( let i = 0; i < numbers.length; i++ ){
 }
+
+
 
 /*
 3. Add 12, 99, and 101 (in that order) to the end of the "numbers" array. Return the "numbers" array.
 */
 function addNums(){
-    // Your answer here:
+    numbers.push (12, 99, 101)
+    return numbers
 }
 
 
@@ -54,27 +56,26 @@ let film = {
 4. Add a property "boxoffice" with a value of 269061 to the "film" object. Return "film".
 */
 function addBoxOffice(){
-    // Your answer here:
+    film.boxoffice=269061
+     return film
 }
 
 /*
 5. Add the name "Yukiko Shimazaki" to the "actors" array. Return "film";
 */
 function addActor(){
-    // Your answer here:
+    film.actors.push="Yukiko Shimazaki"
 }
+
+console.log(film)
 
 /*
 6. Now that you've added a "boxoffice" property, subtract "budget" from "property" and return the difference. This number is the amount lost by the studio in making the film. Return the loss.
 */
 function getLosses(){
-    // Your answer here:
+  loss= film.boxoffice - film.budget
+  return loss
 }
-
-
-
-
-
 
 /*
 7. Iterate over "letterVals" and "numberVals". Concatenate the values from the two arrays and store the new values in the "vals" array. Return "vals".
@@ -86,9 +87,11 @@ let numberVals = [ 5, 67, 34, 456, 78 ];
 let letterVals = [ "v", "x", "r", "f", "p" ];
 
 function interleave(){
-    let vals = [];
-    // Your answer here:
+    let vals = [ numberVals[ i ], letterVals[ i ] ]
+    for( let i = 0; i < 6; i++ ){
+    }
 }
+console.log(vals)
 
 
 
@@ -102,7 +105,10 @@ function interleave(){
 let first = [ "blink", "stand", "glasses", "chair", "numinous", "adjacent", "bracelet", "hand" ];
 let second = [ "think", "stand", "cheese", "break", "numinous", "mouse", "close", "toe" ];
 
-function union(){
-    let same = [];
-    // Your answer here:
-}
+function union(first, second){
+    let same=[first=second]
+
+     for (let i=0; i < length.first, i < length.second; i++)
+     }
+
+console.log(same)
